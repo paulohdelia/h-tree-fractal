@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+canvas {
+  position: absolute;
+  background: #111;
+  width: 100%;
+  height: 100%;
+}
+
+.generate-tree-button {
+  cursor: pointer;
+  outline: none;
+  
+  border: none;
+  border-radius: 50px;
+
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 10;
+
+  padding: 20px 30px;
+  background:#FF00FF;
+  
+  font-weight: bold;
+  font-size: 15px;
+  color: #111;
+
+  width: 300px;
+  overflow: hidden;
+}
+
+.sun-moon {
+  position: absolute;
+  right: 25%;
+  top: 45px;
+
+  width: 64px;
+  height: 64px;
+  z-index: 15;
+
+  cursor: pointer;
+}
