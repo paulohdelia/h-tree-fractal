@@ -44,7 +44,10 @@ function drawTree(startX, startY, len, angle, branchWidth, leafAmount, bodyColor
   context.restore();
 }
 
-drawTree(canvas.width / 2, canvas.height - 80, 120, 0, 23, 10, '#FF00FF', '#00FFFF');
+const isSmallScreen = window.innerWidth < 400;
+const len = isSmallScreen ? 80 : 100;
+
+drawTree(canvas.width / 2, canvas.height - 80, 80, 0, 23, 10, '#FF00FF', '#00FFFF');
 
 function generateRandomTree() {
   context.clearRect(0, 0, canvas.width, canvas.height);
@@ -52,7 +55,7 @@ function generateRandomTree() {
   const centerPointX = canvas.width / 2;
   const startY = canvas.height - 80;
 
-  const len = randomNumber(100, 120);
+  const len = isSmallScreen ? randomNumber(70, 80) : randomNumber(100, 120);
   const angle = 0;
   const branchWidth = randomNumber(2, 45);
   const bodyColor = randomColor();
