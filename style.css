@@ -15,7 +15,7 @@ canvas {
 .generate-tree-button {
   cursor: pointer;
   outline: none;
-  
+
   border: none;
   border-radius: 50px;
 
@@ -26,8 +26,8 @@ canvas {
   z-index: 10;
 
   padding: 20px 30px;
-  background:#FF00FF;
-  
+  background: #ff00ff;
+
   font-weight: bold;
   font-size: 15px;
   color: #111;
@@ -46,4 +46,12 @@ canvas {
   z-index: 15;
 
   cursor: pointer;
+}
+
+#aniversario {
+  font-size: 14px;
+  color: #ff00ff;
+  position: absolute;
+  top: 70px;
+  left: 8%;
 }

@@ -1,6 +1,7 @@
 const canvas = document.querySelector('canvas');
 const generateButton = document.querySelector('.generate-tree-button');
 const sunAndMoonImage = document.querySelector('.sun-moon');
+const aniversario = document.querySelector('#aniversario');
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -63,6 +64,7 @@ function generateRandomTree() {
   const leafAmount = randomNumber(6, 15);
 
   generateButton.style.background = bodyColor;
+  aniversario.style.color = bodyColor;
 
   curve = randomNumber(10, 25);
 
